@@ -33,3 +33,21 @@ print('Version ' + str(1.0) )
 separator = '??'
 print(separator * 100)
 
+tech = 'Machine Learning'
+
+# string[start_index:stop_position]
+
+print(tech[0:7])
+print(tech[8:16])
+print(tech[:7])
+
+print(tech[-8:])
+
+# string[start_index:stop_position:step]
+print(tech[0::3])
+
+print(tech[::-1])
+
+
+
+
