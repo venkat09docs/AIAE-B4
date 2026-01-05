@@ -73,5 +73,30 @@ nums = [1, 2, 3, 4, 5, 6, 7]
 
 # List comprehension
 # [expression for n in nums if condition]
-new_list = [num ** 2 for num in nums if num > 5]
+new_list = [num for num in nums if num > 5]
 print(new_list)
+
+contributors = ['alice', 'Bob', 'CHARLIE']
+
+con_name_cap = [name.capitalize() for name in contributors]
+print(con_name_cap)
+
+
+nums = [1, 7, 8, 14, 21, 30, 50]
+
+nums_divide_by_7 = [num for num in nums if num % 7 == 0]
+
+print(nums_divide_by_7)
+
+# ai_team = ['Alice', 'Bob', 'Charlie']
+# data_team = ['Alice', 'David', 'Charlie']
+#
+# common_names = [name for name in ai_team if name in data_team]
+# # common = [ai_team for ai_team in ai_team if ai_team in data_team]
+#
+# print(common_names)
+
+ai_team = ['Alice', 'Bob', 'Charlie']
+data_team = ['Alice', 'David', 'Charlie']
+comm_names = [name for name in ai_team if name in data_team]
+print(comm_names)
