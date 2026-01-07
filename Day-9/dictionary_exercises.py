@@ -44,4 +44,13 @@ print(hyperparameters)
 # 2. Avoid **duplicate keys** (last assigned value will override)
 # 3. Use **.get()** for safe access to prevent errors
 
+# NESTED DICTIONARIES
+
+pipeline_config = {
+    'GPT-4': {'layers': 48, 'parameters': '175B', 'attention_heads': 96},
+    'BERT': {'layers': 24, 'parameters': '345M', 'attention_heads': 16}
+}
+
+print(pipeline_config['BERT']['parameters'])
+print(pipeline_config['GPT-4']['attention_heads'])
 
