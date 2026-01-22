@@ -13,7 +13,7 @@ with open('./modal_logs1.csv', mode='r') as file:
 
     # find the day where the tokens are used max
 
-    day_wise_tokens = {row[0]: row[3] for row in csv_reader}
+    day_wise_tokens = {row[0]: int(row[3]) for row in csv_reader}
     print(day_wise_tokens)
 
     max_tokens_day = max(day_wise_tokens, key=day_wise_tokens.get)
