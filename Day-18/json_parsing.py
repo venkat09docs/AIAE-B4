@@ -21,7 +21,7 @@ pretty_json = json.dumps(data, indent=8)  # Convert Python object back to JSON s
 
 import requests
 
-response = requests.get('https://jsonplalder.typicode.com/posts')  # Make a GET request to the API
+response = requests.get('https://jsonplaceholder.typicode.com/posts')  # Make a GET request to the API
 print(response)  # Print the status code of the response
 
 # Status Codes
